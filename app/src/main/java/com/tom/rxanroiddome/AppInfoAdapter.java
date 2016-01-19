@@ -26,6 +26,9 @@ public class AppInfoAdapter extends RecyclerView.Adapter<AppInfoAdapter.ViewHold
 //        this.mDatas = list;
     }
 
+    public void claer(){
+        mDatas.clear();
+    };
     public void addApplications(List<AppInfo> list) {
         this.mDatas = list;
         notifyDataSetChanged();
@@ -46,7 +49,7 @@ public class AppInfoAdapter extends RecyclerView.Adapter<AppInfoAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return mDatas.size();
+        return mDatas==null ? 0 : mDatas.size();
     }
 
     /**
