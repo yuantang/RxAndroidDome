@@ -23,7 +23,6 @@ public class AppInfo implements Comparable<Object> {
     public String getmName() {
         return mName;
     }
-
     public void setmName(String mName) {
         this.mName = mName;
     }

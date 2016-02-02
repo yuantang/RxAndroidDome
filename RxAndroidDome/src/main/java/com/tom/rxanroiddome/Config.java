@@ -5,5 +5,4 @@ package com.tom.rxanroiddome;
  */
 public class Config {
     public static   boolean isDebug=true;
-
 }

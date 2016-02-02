@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#FFEC8B"
+    card_view:cardCornerRadius="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/item_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_below="@+id/item_pic"
+            android:id="@+id/item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="一场辩论赛主题是“辩论赛究竟有没有意义”，正方选手进行了认真的准备，并按时到达了辩论赛场。过了半个小时，反方还没有出现"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/item_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="老王王八蛋"
+            android:layout_below="@+id/item_content"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:padding="4dp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

@@ -59,7 +59,6 @@ public class DownLoadActivity extends AppCompatActivity {
     @OnClick({R.id.btn_download})
     protected void   OnClick(View view){
         if (view.getId()==R.id.btn_download){
-
             btnDownload.setText("正在下载...");
             btnDownload.setClickable(false);
             mDownloadProgress.distinct().observeOn(AndroidSchedulers.mainThread()).subscribe(new Observer<Integer>() {
